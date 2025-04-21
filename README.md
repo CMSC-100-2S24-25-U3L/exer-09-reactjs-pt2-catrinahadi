@@ -1,1 +1,7 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/BeC5d7TF)
+Author: mohadi
+Date: 04/21/2025
+Title: React components of Lazado E-commerce site
+Exercise 09
+
+
+Description: This program is a continuation of Exercise 8, where we build on the e-commerce website by adding a functional “Add to Cart” feature. It applies the topics discussed in Week 9, including state management using useState, event handling, and the use of spread syntax. The updated site must start with at least four product lists and a new component for the shopping cart, which appears on the right side of the page using flexbox layout. Each navigation button should be made as a reusable component. When a user clicks the “Add to Cart” button, the item should appear in the cart, the total number of items should be updated correctly, and a delete button should be available to remove one item at a time from the cart.
