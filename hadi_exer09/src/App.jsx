@@ -120,10 +120,17 @@ function App() { //initializing values to be used
   };
 
   const removeFromCart = (id) => {
-    const updatedCart = cartItems.filter((item) => item.id !== id);
-    setCartItems(updatedCart);
-    console.log('Removed from cart: ', id); //for checking if the product is successfully removed from the cart
+    setCartItems((prevItems) => {
+      const index = prevItems.findIndex((item) => item.id === id);
+      if (index !== -1) {
+        const updatedItems = [...prevItems];
+        updatedItems.splice(index, 1); //remove only one instance
+        return updatedItems;
+      }
+      return prevItems;
+    });
   };
+  
     
   return (
     <>
